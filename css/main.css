@@ -1,0 +1,303 @@
+/* =================== FONTS =================== */
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+/* ============== GENERAL ============== */
+.container {
+    max-width: 1200px;
+}
+
+body {
+  font-family: "Montserrat-Regular";
+  color: #626262;
+}
+body .container-fluid{
+    padding: 0px;
+}
+a {
+  text-decoration: none;
+  line-height: 1;
+  display: inline-block;
+  color: #626262;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+a:hover {
+  color: #e87528;
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+p {
+  margin: 0px;
+}
+img{
+    width: 100%;
+}
+/* -------- Pre Loader -------- */
+.animsition-loading-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+[data-loader="ball-scale"] {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: ball-scale infinite linear 0.75s;
+  -moz-animation: ball-scale infinite linear 0.75s;
+  -o-animation: ball-scale infinite linear 0.75s;
+  animation: ball-scale infinite linear 0.75s;
+  border-radius: 100%;
+  background-color: #e87528;
+}
+
+@-webkit-keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes ball-scale {
+  0% {
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/* ============== HEADER ============== */
+.header{
+    background-image: url('../images/header-bg-1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+.navbar{
+    padding: 32px 0px;
+}
+/* -------- LOGO -------- */
+.logo img{
+    width: 169px;
+}
+/* -------- NAV SECTION -------- */
+.navbar .nav-section{
+  padding-left: 70px;
+}
+.topbar{
+  padding-bottom: 15px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 15px;
+}
+.social-media li{
+  margin: 0px 5px;
+}
+.social-media li:last-child{
+  margin-right: 0px;
+}
+.social-facebook img,
+.social-linkedin img,
+.social-instagram img{
+  width: 22px;
+}
+.main-menu li{
+  padding: 0px 30px;
+}
+.main-menu li:first-child{
+  padding-left: 0px;
+}
+.main-menu li:last-child{
+  padding-right: 0px;
+}
+.main-menu li a{
+  font-family: 'Montserrat-Regular';
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* -------- mobile menu button -------- */
+.navbar-toggler{
+  background-color: azure;
+  cursor: pointer;
+  outline: none;
+}
+.navbar-toggler:focus{
+  outline:none;
+}
+/* -------- Header Content -------- */
+.header-content{
+  padding-top: 200px;
+  padding-bottom: 160px;
+}
+.header-content .left-content h2{
+  font-family: 'Montserrat-Bold';
+  font-size: 75.77px;
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  padding: 20px 0;
+  display: inline-block;
+}
+.header-content .left-content h2 span{
+  font-family: 'Montserrat-Regular';
+  font-size: 43.5px;
+  letter-spacing: 15px;
+  display: block;
+}
+.header-content .left-content h2::before,
+.header-content .left-content h2::after{
+  content: '';
+  position: absolute;
+  width: 110px;
+  height: 3px;
+  background: #fff;
+}
+.header-content .left-content h2::before{
+  top: 0;
+  left: 0;
+}
+.header-content .left-content h2::after{
+  bottom: 0;
+  right: 0;
+}
+.header-content .right-content p{
+  max-width: 57%;
+  margin-right: 0;
+  margin-left: auto;
+  font-family: 'Montserrat-Light';
+  font-size: 18.51px;
+  color: #fff;
+  line-height: 1.7;
+}
+/* ============== Body Sections ============== */
+
+/* ============== Footer ============== */
+
+/* ============== SLICK ============== */
+
+/* -------- Slider -------- */
+
+/* -------- Product -------- */
+
+/* ============== SELECT2 ============== */
+
+/* ============== Mobile Menu ============== */
+
+/* ============== MEDIA ============== */
+/* -------- 1200 * 991 * 768 * 575  -------- */
+@media (max-width: 1200px) {
+  .navbar .nav-section{
+    padding-left: 0px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  .main-menu li{
+    padding: 0px 22px;
+  }
+}
+@media (max-width:991px){
+  .topbar{
+    display: none;
+  }
+  .nav-section .wrap_menu{
+    /* padding-top: 30px; */
+  }
+  .main-menu li{
+    padding: 0px;
+  }
+  .wrap_menu .navbar-nav {
+    text-align: center;
+  }
+  .main-menu li a{
+    padding: 10px;
+    width: 100%;
+  }
+  .header-content{
+    padding: 50px 0;
+  }
+  .header-content .left-content{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header-content .right-content p{
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}

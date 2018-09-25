@@ -207,7 +207,7 @@ img{
 }
 .header-content .left-content h2{
   font-family: 'Montserrat-Bold';
-  font-size: 75.77px;
+  font-size: 75px;
   color: #fff;
   line-height: 1;
   text-transform: uppercase;
@@ -217,7 +217,7 @@ img{
 }
 .header-content .left-content h2 span{
   font-family: 'Montserrat-Regular';
-  font-size: 43.5px;
+  font-size: 41px;
   letter-spacing: 15px;
   display: block;
 }

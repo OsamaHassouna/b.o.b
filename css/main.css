@@ -485,7 +485,7 @@ background: #161616;
 /* ------- Header Texture ------- */
 .header-texture-1{
   bottom: 6px;
-  right: 60px;
+  right: 30px;
 }
 .header-texture-1 > .doted-y-small{
   background-position: center 0, center 90px, center 180px, center 270px, center 360px, center 450px;

@@ -13,15 +13,15 @@
 }
 /* ============== GENERAL ============== */
 .container {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 
 body {
   font-family: "Montserrat-Regular";
   color: #302d2a;
 }
-body .container-fluid{
-    padding: 0px;
+body .container-fluid {
+  padding: 0px;
 }
 a {
   text-decoration: none;
@@ -35,9 +35,9 @@ a {
 a:hover {
   text-decoration: none;
 }
-.button{
+.button {
   font-size: 20px;
-  font-family: 'Montserrat-Light';
+  font-family: "Montserrat-Light";
   line-height: 1;
   padding: 30px 40px;
   color: #161616;
@@ -51,8 +51,8 @@ ul {
 p {
   margin: 0px;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 /* -------- Pre Loader -------- */
 .animsition-loading-1 {
@@ -147,72 +147,300 @@ img{
     opacity: 0;
   }
 }
-/* ============== HEADER ============== */
-.header{
-    background-image: url('../images/header-bg-1.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
+/* ------- DOTED BACKGROUND ------- */
+.bg-texture {
+  position: absolute;
+  z-index: 0;
 }
-.navbar{
-    padding: 32px 0px;
+.width-x {
+  width: 660px;
+  height: auto;
+}
+.width-y {
+  width: 170px;
+  height: auto;
+}
+.pos-x {
+  height: 30px;
+  margin-bottom: 60px;
+}
+.pos-x:last-of-type {
+  margin: 0px;
+}
+.pos-y {
+  width: 20px;
+  margin-right: 125px;
+  height: 1060px;
+  float: left;
+}
+.pos-y:last-of-type {
+  margin: 0px;
+}
+.doted-bg-black {
+  background-image: -webkit-radial-gradient(
+      circle,
+      rgb(48, 45, 42) 25%,
+      rgba(0, 0, 0, 0) 25%
+    ),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%);
+  background-image: -moz-radial-gradient(
+      circle,
+      rgb(48, 45, 42) 25%,
+      rgba(0, 0, 0, 0) 25%
+    ),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%);
+  background-image: radial-gradient(
+      circle,
+      rgb(48, 45, 42) 25%,
+      rgba(0, 0, 0, 0) 25%
+    ),
+    radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%);
+  background-repeat: no-repeat;
+
+}
+.doted-bg-white {
+  background-image: -webkit-radial-gradient(
+      circle,
+      rgba(255,255,255,1) 0,
+      rgba(255,255,255,1) 25%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0,0,0,0) 100%
+    ),
+    -webkit-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -webkit-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -webkit-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -webkit-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -webkit-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%);
+  background-image: -moz-radial-gradient(
+      circle,
+      rgba(255,255,255,1) 0,
+      rgba(255,255,255,1) 25%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0,0,0,0) 100%
+    ),
+    -moz-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -moz-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -moz-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -moz-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -moz-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%);
+  background-image: radial-gradient(
+      circle,
+      rgba(255,255,255,1) 0,
+      rgba(255,255,255,1) 25%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0,0,0,0) 100%
+    ),
+    radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%);
+  background-repeat: no-repeat;
+
+}
+.doted-bg-black-line {
+  background-image: -webkit-radial-gradient(
+      circle,
+      rgb(48, 45, 42) 25%,
+      rgba(0, 0, 0, 0) 25%
+    ),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%);
+  background-image: -moz-radial-gradient(
+      circle,
+      rgb(48, 45, 42) 25%,
+      rgba(0, 0, 0, 0) 25%
+    ),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%);
+  background-image: radial-gradient(
+      circle,
+      rgb(48, 45, 42) 25%,
+      rgba(0, 0, 0, 0) 25%
+    ),
+    radial-gradient(circle, rgb(48, 45, 42) 25%, rgba(0, 0, 0, 0) 25%),
+    radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%);
+  background-repeat: no-repeat;
+
+}
+.doted-bg-white-line {
+  background-image: -webkit-radial-gradient(
+      circle,
+      rgba(255,255,255,1) 0,
+      rgba(255,255,255,1) 25%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0,0,0,0) 100%
+    ),
+    -webkit-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -webkit-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%);
+  background-image: -moz-radial-gradient(
+      circle,
+      rgba(255,255,255,1) 0,
+      rgba(255,255,255,1) 25%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0,0,0,0) 100%
+    ),
+    -moz-radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    -moz-radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%);
+  background-image: radial-gradient(
+      circle,
+      rgba(255,255,255,1) 0,
+      rgba(255,255,255,1) 25%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(0,0,0,0) 100%
+    ),
+    radial-gradient(circle, rgba(255,255,255,1) 0, rgba(255,255,255,1) 25%, rgba(0, 0, 0, 0) 25%, rgba(0,0,0,0) 100%),
+    radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%),
+    radial-gradient(circle, rgb(48, 45, 42) 0%, rgba(0, 0, 0, 0) 0%);
+  background-repeat: no-repeat;
+
+}
+.doted-x-small{
+  background-position: 0 center, 130px center, 260px center, 390px center,
+    520px center, 650px center;
+}
+.doted-y-small{
+  background-position: center 0, center 130px, center 260px, center 390px, center 520px, center 650px;
+}
+.doted-y-big{
+  background-position: center 0, center 235px, center 470px, center 705px, center 940px, center 1175px;
+}
+.doted-small{
+  -webkit-background-size: 15px 15px;
+  background-size: 15px 15px;
+}
+.doted-big{
+  -webkit-background-size: 30px 30px;
+  background-size: 30px 30px;
+}
+.v-line,
+.h-line{
+  position: relative;
+}
+.v-line.black::after,
+.h-line.black::after{
+background: #161616;
+}
+.v-line.white::after,
+.h-line.white::after{
+  background: #fff;
+}
+.h-line::after{
+  content: '';
+  width: 60%;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 140px;
+}
+.v-line::after{
+  content: '';
+  width: 8px;
+  height: 55%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* ============== HEADER ============== */
+.header {
+  background-image: url("../images/header-bg-1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;
+}
+.navbar {
+  padding: 32px 0px;
 }
 /* -------- LOGO -------- */
-.logo img{
-    width: 169px;
+.logo img {
+  width: 169px;
 }
 /* -------- NAV SECTION -------- */
-.navbar .nav-section{
+.navbar .nav-section {
   padding-left: 70px;
 }
-.topbar{
+.topbar {
   padding-bottom: 15px;
   border-bottom: 2px solid #fff;
   margin-bottom: 15px;
 }
-.social-media li{
+.social-media li {
   margin: 0px 5px;
 }
-.social-media li:last-child{
+.social-media li:last-child {
   margin-right: 0px;
 }
 .social-facebook img,
 .social-linkedin img,
-.social-instagram img{
+.social-instagram img {
   width: 22px;
 }
-.main-menu li{
+.main-menu li {
   padding: 0px 30px;
 }
-.main-menu li:first-child{
+.main-menu li:first-child {
   padding-left: 0px;
 }
-.main-menu li:last-child{
+.main-menu li:last-child {
   padding-right: 0px;
 }
-.main-menu li a{
-  font-family: 'Montserrat-Regular';
+.main-menu li a {
+  font-family: "Montserrat-Regular";
   font-size: 14px;
   line-height: 1.2;
   color: #fff;
 }
 
 /* -------- mobile menu button -------- */
-.navbar-toggler{
+.navbar-toggler {
   background-color: azure;
   cursor: pointer;
   outline: none;
 }
-.navbar-toggler:focus{
-  outline:none;
+.navbar-toggler:focus {
+  outline: none;
 }
 /* -------- Header Content -------- */
-.header-content{
+.header-content {
   padding-top: 200px;
   padding-bottom: 160px;
 }
-.header-content .left-content h2{
-  font-family: 'Montserrat-Bold';
+.header-content .left-content h2 {
+  font-family: "Montserrat-Bold";
   font-size: 72px;
   color: #fff;
   line-height: 1;
@@ -221,57 +449,73 @@ img{
   padding: 20px 0;
   display: inline-block;
 }
-.header-content .left-content h2 span{
-  font-family: 'Montserrat-Regular';
+.header-content .left-content h2 span {
+  font-family: "Montserrat-Regular";
   font-size: 40px;
   letter-spacing: 15px;
   display: block;
 }
 .header-content .left-content h2::before,
-.header-content .left-content h2::after{
-  content: '';
+.header-content .left-content h2::after {
+  content: "";
   position: absolute;
   width: 110px;
   height: 3px;
   background: #fff;
 }
-.header-content .left-content h2::before{
+.header-content .left-content h2::before {
   top: 0;
   left: 0;
 }
-.header-content .left-content h2::after{
+.header-content .left-content h2::after {
   bottom: 0;
   right: 0;
 }
-.header-content .right-content p{
+.header-content .right-content p {
   max-width: 57%;
   margin-right: 0;
   margin-left: auto;
-  font-family: 'Montserrat-Light';
+  font-family: "Montserrat-Light";
   font-size: 18.51px;
   color: #fff;
   line-height: 1.7;
 }
+/* ------- Header Texture ------- */
+.header-texture-1{
+  bottom: 0px;
+  right: 60px;
+}
+.header-texture-1 > .doted-y-small{
+  background-position: center 0, center 90px, center 180px, center 270px, center 360px, center 450px;
+}
+.header-texture-1 > .pos-y{
+  height: 415px;
+}
+.header-texture-2{
+  bottom: 40px;
+  left: 30px;
+  width: 100%;
+}
 /* ============== Body Sections ============== */
-/* -------- WHO ARE WE -------- */
+/* ======= WHO ARE WE ======= */
 .who-are-we {
   padding-top: 170px;
   padding-bottom: 280px;
-
+  position: relative;
 }
-.waw-bg{
-  background-image: url('../images/bg-logo.svg');
+.waw-bg {
+  background-image: url("../images/bg-logo.svg");
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
 }
 /* -------- sec title -------- */
-.who-are-we .sec-title{
+.who-are-we .sec-title {
   margin: 0 auto;
   margin-bottom: 85px;
 }
-.who-are-we .sec-title h2{
-  font-family: 'Montserrat-Bold';
+.who-are-we .sec-title h2 {
+  font-family: "Montserrat-Bold";
   font-size: 28px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -280,20 +524,20 @@ img{
   text-align: center;
   margin-bottom: 0px;
 }
-.who-are-we .sec-title h2 > div{
+.who-are-we .sec-title h2 > div {
   margin-bottom: 40px;
 }
 .sym-1,
-.sym-2{
+.sym-2 {
   visibility: hidden;
 }
 .who-are-we .sec-title .we .sym-1,
-.who-are-we .sec-title .waw-symbols .sym-2{
+.who-are-we .sec-title .waw-symbols .sym-2 {
   position: relative;
 }
 .who-are-we .sec-title .we .sym-1::after,
-.who-are-we .sec-title .waw-symbols .sym-2::before{
-  content: '';
+.who-are-we .sec-title .waw-symbols .sym-2::before {
+  content: "";
   position: absolute;
   height: 3px;
   background: #161616;
@@ -302,36 +546,45 @@ img{
   transform: translateX(-50%);
   visibility: visible;
 }
-.who-are-we .sec-title .we .sym-1::after{
+.who-are-we .sec-title .we .sym-1::after {
   width: 15px;
 }
-.who-are-we .sec-title .waw-symbols .sym-2::before{
+.who-are-we .sec-title .waw-symbols .sym-2::before {
   width: 134px;
 }
-.who-are-we .sec-title .waw-symbols{
+.who-are-we .sec-title .waw-symbols {
   margin-bottom: 0px;
 }
 /* -------- sec description -------- */
-.who-are-we .sec-description{
+.who-are-we .sec-description {
   margin: 0 auto;
   text-align: center;
 }
-.who-are-we .sec-description p{
-  font-family: 'Montserrat-Light';
+.who-are-we .sec-description p {
+  font-family: "Montserrat-Light";
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 50px;
   color: #161616;
   text-align: left;
 }
-.who-are-we .sec-description p:last-of-type{
+.who-are-we .sec-description p:last-of-type {
   margin-bottom: 125px;
 }
-.who-are-we .sec-description p span{
-  font-family: 'Montserrat-Bold';
+.who-are-we .sec-description p span {
+  font-family: "Montserrat-Bold";
 }
-
+/* ------- Who are we Texture ------- */
+.waw-texture-1{
+  top: 15px;
+  left: 30px;
+}
+.waw-texture-2{
+  bottom: 0px;
+  right: 60px;
+}
 /* ============== Footer ============== */
+
 
 /* ============== SLICK ============== */
 
@@ -346,50 +599,49 @@ img{
 /* ============== MEDIA ============== */
 /* -------- 1200 * 991 * 768 * 575  -------- */
 @media (max-width: 1200px) {
-  .navbar .nav-section{
+  .navbar .nav-section {
     padding-left: 0px;
   }
 }
-@media (min-width: 992px) and (max-width: 1200px){
-  .main-menu li{
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main-menu li {
     padding: 0px 22px;
   }
 }
-@media (max-width:991px){
-  .topbar{
+@media (max-width: 991px) {
+  .topbar {
     display: none;
   }
-  .nav-section .wrap_menu{
-    /* padding-top: 30px; */
-  }
-  .main-menu li{
+  /* .nav-section .wrap_menu {
+    padding-top: 30px;
+  } */
+  .main-menu li {
     padding: 0px;
   }
   .wrap_menu .navbar-nav {
     text-align: center;
   }
-  .main-menu li a{
+  .main-menu li a {
     padding: 10px;
     width: 100%;
   }
-  .header-content{
+  .header-content {
     padding: 50px 0;
   }
-  .header-content .left-content{
+  .header-content .left-content {
     text-align: center;
     margin-bottom: 20px;
   }
-  .header-content .right-content p{
+  .header-content .right-content p {
     margin: 0 auto;
     max-width: 80%;
   }
 }
-@media (max-width:768px){
-
+@media (max-width: 768px) {
 }
-@media (max-width:575px){
+@media (max-width: 575px) {
   .who-are-we .sec-title,
-  .who-are-we .sec-description{
+  .who-are-we .sec-description {
     margin-right: 30px;
     margin-left: 30px;
   }

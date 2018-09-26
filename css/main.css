@@ -498,6 +498,9 @@ background: #161616;
   left: 30px;
   width: 95%;
 }
+.header-texture-2 > div:first-of-type {
+  width: 40%;
+}
 /* ============== Body Sections ============== */
 /* ======= WHO ARE WE ======= */
 .who-are-we {

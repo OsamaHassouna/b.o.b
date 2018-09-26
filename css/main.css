@@ -151,6 +151,7 @@ img {
 .bg-texture {
   position: absolute;
   z-index: 0;
+  display: none;
 }
 .width-x {
   width: 660px;
@@ -381,6 +382,7 @@ background: #161616;
   background-attachment: fixed;
   background-position: top;
   position: relative;
+  background-color: #0f0f0f;
 }
 .navbar {
   padding: 32px 0px;
@@ -494,7 +496,7 @@ background: #161616;
 .header-texture-2{
   bottom: 40px;
   left: 30px;
-  width: 100%;
+  width: 95%;
 }
 /* ============== Body Sections ============== */
 /* ======= WHO ARE WE ======= */
@@ -606,6 +608,11 @@ background: #161616;
 @media (min-width: 992px) and (max-width: 1200px) {
   .main-menu li {
     padding: 0px 22px;
+  }
+}
+@media (min-width: 992px){
+  .bg-texture{
+    display: block;
   }
 }
 @media (max-width: 991px) {

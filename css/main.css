@@ -1,5 +1,9 @@
 /* =================== FONTS =================== */
 @font-face {
+  font-family: Montserrat-BlackItalic;
+  src: url("../fonts/Montserrat-BlackItalic.ttf");
+}
+@font-face {
   font-family: Montserrat-Bold;
   src: url("../fonts/Montserrat-Bold.ttf");
 }
@@ -42,6 +46,21 @@ a:hover {
   padding: 30px 40px;
   color: #161616;
   border: 1px solid #161616;
+  text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+}
+.button:hover{
+  background: #161616;
+  color:#fff;
+  transition: 0.5s all ease-in-out;
+}
+.btn-white{
+  color:#fff;
+  border-color: #fff;
+}
+.btn-white:hover{
+  color: #161616;
+  background: #fff;
 }
 ul {
   padding: 0;
@@ -588,6 +607,110 @@ background: #161616;
   bottom: 0px;
   right: 60px;
 }
+
+/* ======= WHY ======= */
+.why{
+  background-color: #161616;
+  /* padding-top: 85px; */
+  padding-bottom: 65px;
+  position: relative;
+}
+/* ----- TITLE ----- */
+.why .why-title{
+  position: absolute;
+  top: 10%;
+  left: 0;
+  max-width: 435px;
+  z-index: 3;
+  right: 0;
+  margin-left: 50%;
+  transform: translateX(-39%);
+}
+.why .title-left,
+.why .title-right{
+  float:left;
+}
+.why .title-left{
+  padding: 13px 17px 12px;
+  border: 1px solid #fff;
+  margin-right: 45px;
+}
+.why .title-left h3{
+  font-family: 'Montserrat-BlackItalic';
+  font-size: 140px;
+  line-height: 1;
+  margin: 0;
+  max-height: 90px;
+  min-width: 100px;
+  color: #fff;
+}
+.why .title-right h2{
+  font-family: 'Montserrat-Bold';
+  font-size: 29px;
+  letter-spacing: 82px;
+  text-transform: uppercase;
+  color: #fff;
+  max-width: 251px;
+}
+.why .title-right img{
+  max-width: 251px;
+}
+/* ----- DESCRIPTION ----- */
+.why .why-desc{
+  text-align: right;
+  z-index: 2;
+  padding-top: 25%;
+}
+.why .why-desc p {
+  font-family: 'Montserrat-Light';
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 80px;
+  color: #fff;
+  max-width: 93%;
+  margin-left: auto;
+  text-align: left;
+}
+.why .why-desc h4 {
+  font-family: 'Montserrat-Bold';
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 85px;
+  color: #fff;
+  max-width: 300px;
+  margin-left: auto;
+}
+.why .why-desc h4 span{
+  font-size: 40px;
+}
+/* ----- IMAGE ----- */
+.why .why-img{
+  margin-top: -50px;
+}
+.why .why-img > img{
+  z-index: 2;
+}
+.why .why-img .img-bg-logo{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+.why .why-img .bl-shadow{
+  z-index: 1;
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 0.5;
+}
+.why .why-img .wh-shadow{
+  z-index: 3;
+}
+.why .why-img .wh-shadow img{
+  opacity: 0.1;
+  transform: translateX(-50%);
+}
+
 /* ============== Footer ============== */
 
 

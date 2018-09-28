@@ -629,8 +629,6 @@ background: #161616;
 .why .title-right{
   float:left;
 }
-.why .title-left{
-}
 .why .title-left h3{
   font-family: 'Montserrat-BlackItalic';
   font-size: 140px;
@@ -712,7 +710,27 @@ background: #161616;
   opacity: 0.1;
   transform: translateX(-50%);
 }
-
+/* ----- TEXTURE ----- */
+.why-img-texture {
+  position: relative;
+}
+.why-texture.bg-texture{
+  display: block;
+  width: auto;
+  bottom: 55px;
+  width: 100%;
+  left: 75px;
+}
+.why-texture .pos-y{
+  height: 530px;
+  /* margin-right: 20%; */
+}
+.why-texture .pos-y:last-of-type{
+  margin-right: 0px;
+}
+.why-texture .doted-y-small{
+  background-position: center 0, center 100px, center 200px, center 300px, center 400px, center 500px;
+}
 /* ============== Footer ============== */
 
 

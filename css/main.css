@@ -396,7 +396,7 @@ background: #161616;
 
 /* ============== HEADER ============== */
 .header {
-  background-image: url("../images/header-bg-1.png");
+  background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -538,18 +538,21 @@ background: #161616;
   margin: 0 auto;
   margin-bottom: 85px;
 }
-.who-are-we .sec-title h2 {
+.who-are-we .sec-title .who-box {
   font-family: "Montserrat-Bold";
   font-size: 28px;
   line-height: 1.2;
   text-transform: uppercase;
   padding: 30px;
-  border: 1px solid #161616;
+  border: 2px solid #161616;
   text-align: center;
   margin-bottom: 0px;
 }
-.who-are-we .sec-title h2 > div {
+.who-are-we .sec-title .who-box > div {
   margin-bottom: 40px;
+}
+.who-are-we .sec-title .who-box > div:last-of-type {
+  margin-bottom: 0px;
 }
 .sym-1,
 .sym-2 {
@@ -765,7 +768,7 @@ background: #161616;
   max-width: 300px;
   padding: 20px;
   height: 145px;
-  border: 1px solid #161616;
+  border: 2px solid #161616;
   margin-right: 25px;
 }
 .csr .csr-box-top {
@@ -835,7 +838,7 @@ background: #161616;
   margin-bottom: 40px;
 }
 .csr-btn {
-  font-size: 16px;
+  font-size: 18px;
   padding: 17px 15px;
 }
 /* -------- CSR Right -------- */
@@ -847,7 +850,32 @@ background: #161616;
   bottom: 20px;
   left: 25px;
 }
-
+.csr-img-text p{
+  font-family: 'Montserrat-Light';
+  font-size: 37px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+}
+.csr-ltr-space{
+  letter-spacing: 15px;
+}
+.csr-ltr-space span{
+  margin-right: -15px;
+}
+.csr-img-text h3,
+.csr-img-text h4{
+  font-family: 'Montserrat-Bold';
+  font-size: 37px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.csr-img-text h3{
+  font-size: 53px;
+}
+/* ----- CSR Texture ----- */
 .csr-img-line1 {
   position: absolute;
   bottom: 200px;
@@ -865,14 +893,13 @@ background: #161616;
   bottom: 120px;
   left: 260px;
   width: 45%;
-  height: 5px;
+  height: 4px;
 }
 .csr-img-line2::after{
   left: 0;
   width: 100%;
   height: 2px;
 }
-
 .csr-img-texture1{
   top: 40px;
   right: 0;
@@ -898,30 +925,85 @@ background: #161616;
   height: 15px;
 }
 
-.csr-img-text p{
+/* ======= PARTNERS ======= */
+.partners{
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+/* ----- Title ----- */
+.partners-title{
+  margin-bottom: 55px;
+}
+.partners-title > div {
+  float: left;
+}
+.partners-quotes{
+  height: 72px;
+  width: 72px;
+  position: relative;
+  border: 1px solid #161616;
+  margin-right: 20px;
+}
+.partners-quotes::after {
+  content: '“';
+  line-height: 1;
+  font-family: 'Montserrat-BlackItalic';
+  font-size: 70px;
+  position: absolute;
+  height: 45px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.partners-title .title-text{
+  padding: 6px 0;
+}
+.partners-title .title-text p {
+  position: relative;
   font-family: 'Montserrat-Light';
-  font-size: 37px;
+  font-size: 25px;
   line-height: 1;
-  color: #fff;
   text-transform: uppercase;
+  letter-spacing: 32px;
 }
-.csr-ltr-space{
-  letter-spacing: 15px;
+.title-hyphen {
+  position: absolute;
+  width: 65px;
+  height: 1px;
+  background: #161616;
+  bottom: 4px;
+  right: 4px;
 }
-.csr-ltr-space span{
-  margin-right: -15px;
-}
-.csr-img-text h3,
-.csr-img-text h4{
+.partners-title .title-text h2 {
+  margin-bottom: 0;
   font-family: 'Montserrat-Bold';
-  font-size: 37px;
   line-height: 1;
-  color: #fff;
+  font-size: 35px;
   text-transform: uppercase;
-  margin-bottom: 0px;
 }
-.csr-img-text h3{
-  font-size: 53px;
+.partners-slider .item-container{
+  border-radius: 50%;
+  border: 10px solid #e2e2e2;
+  padding: 20px;
+  max-width: 118px;
+  height: 116px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.partners-slider .items-slick img{
+  max-width: 100px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  margin: 0 auto;
+}
+.partners-slider .item-container:hover img{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 /* ============== Footer ============== */
 

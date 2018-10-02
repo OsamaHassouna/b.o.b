@@ -73,6 +73,19 @@ p {
 img {
   width: 100%;
 }
+.seperator{
+  position: relative;
+}
+.seperator::after{
+  content: '';
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 1px;
+  background: #fff;
+}
 /* -------- Pre Loader -------- */
 .animsition-loading-1 {
   position: absolute;
@@ -992,6 +1005,7 @@ background: #161616;
   display: flex;
   align-items: center;
   background-color: #fff;
+  outline: none;
 }
 .partners-slider .items-slick img{
   max-width: 100px;
@@ -1000,14 +1014,108 @@ background: #161616;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   margin: 0 auto;
+  outline: none;
+
+}
+.partners-slider .item-container:hover{
+  border-radius: 0px;
 }
 .partners-slider .item-container:hover img{
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
 /* ============== Footer ============== */
-
-
+footer{
+  background-color: #161616;
+}
+.bob-pdf{
+  padding: 160px 0 135px;
+  text-align: center;
+}
+.bob-pdf a{
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  /* float: left; */
+}
+.bob-pdf img{
+  max-width: 180px;
+  margin: 0 30px;
+}
+.footer-nav {
+  margin-bottom: 75px;
+}
+.footer-main{
+  padding: 45px 0 15px;
+}
+.footer-links ul{
+  display: inline-block;
+}
+.footer-links li {
+  float: left;
+  line-height: 1;
+  padding: 5px 10px;
+}
+.footer-links li:first-child{
+  padding-left: 0px;
+}
+.footer-links li a {
+  font-family: 'Montserrat-Light';
+  font-size: 12px;
+  color: #cbcbcb;
+  line-height: 1;
+}
+.footer-newsletter input {
+  font-size: 12px;
+  max-width: 450px;
+  width: 73%;
+  font-family: 'Montserrat-Light';
+  color: #cbcbcb;
+  background: #000;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-right: 5px;
+}
+.footer-newsletter input::placeholder{
+  color: #cbcbcb;
+}
+.footer-newsletter .button {
+  padding: 10px 15px;
+  font-size: 12px;
+  background: transparent;
+  cursor: pointer;
+}
+.footer-newsletter .button:hover{
+  background: #fff;
+  color: #000;
+}
+.footer-logo{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer-logo img{
+  max-width: 105px;
+}
+.footer-main .social-media{
+  margin-bottom: 45px;
+}
+.footer-main .social-media li {
+  margin: 0 12px;
+}
+.footer-main .social-media ul{
+  width: 10%;
+  margin: 0 auto;
+}
+.copy-writes{
+  font-size: 10px;
+  font-family: 'Montserrat-Light';
+  line-height: 1.1;
+  color: #aaa;
+  text-align: center;
+}
 /* ============== SLICK ============== */
 
 /* -------- Slider -------- */
@@ -1110,6 +1218,13 @@ background: #161616;
   .csr-img-texture2{
     display: block;
     max-width: 250px;
+  }
+  .footer-links{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer-newsletter{
+    justify-content: center !important;
   }
 }
 @media (max-width: 768px) {

@@ -3,7 +3,7 @@
   font-family: Montserrat;
   src: url("../fonts/Montserrat-BlackItalic.ttf");
   font-weight: 900;
-  font-style: italic;
+  /* font-style: italic; */
 }
 @font-face {
   font-family: Montserrat;

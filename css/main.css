@@ -1396,8 +1396,11 @@ svg .cls-1{
     height: 330px;
   }
   /* ----- Footer ----- */
+  .bob-pdf .top-line{
+    right: 0;
+  }
   .bob-pdf .left-line{
-    left: 15%;
+    left: 5%;
   }
   .footer-links{
     text-align: center;
@@ -1421,6 +1424,10 @@ svg .cls-1{
     /* left: -100px; */
     width: 140px;
     /* transform: rotate(90deg); */
+  }
+  /* ----- Footer ----- */
+  .bob-pdf .left-line{
+    left: 5px;
   }
 }
 
@@ -1459,5 +1466,18 @@ svg .cls-1{
     font-size: 100px;
     width: 70px;
     height: 60px;
+  }
+  /* ----- Footer ----- */
+  .bob-pdf .left-line{
+    display: none;
+  }
+  .footer-links ul{
+    display: block;
+  }
+  .footer-links li{
+    max-width: 50%;
+    float: none;
+    margin: 0 auto;
+    padding: 10px 0;
   }
 }

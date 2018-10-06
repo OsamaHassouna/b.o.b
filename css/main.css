@@ -819,6 +819,9 @@ background: #161616;
   position: relative;
 }
 /* -------- CSR Left -------- */
+.csr .csr-left{
+  padding-left: 15px;
+}
 .csr-title,
 .csr-desc{
   max-width: 560px;
@@ -879,7 +882,7 @@ background: #161616;
   transform: translateY(-50%) translateX(-50%);
 }
 .csr-title-desc{
-  max-width: 320px;
+  max-width: 230px;
 }
 .csr-title-desc p{
   font-family: 'Montserrat';
@@ -889,7 +892,7 @@ background: #161616;
   color: #c6c6c6;
   padding-bottom: 15px;
   border-bottom: 1px solid #161616;
-  max-width: 85%;
+  /* max-width: 85%; */
   /* position: relative; */
 }
 
@@ -1349,8 +1352,9 @@ svg .cls-1{
   .csr{
     padding-bottom: 0px;
   }
-  .csr-left{
+  .csr .csr-left{
     margin-bottom: 50px;
+    padding-left: 0;
   }
   .csr-title, .csr-desc {
     max-width: none;

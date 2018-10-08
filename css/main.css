@@ -94,7 +94,7 @@ img {
   background: #fff;
   max-width: 500px;
 }
-
+/* ---- social media icons ----*/
 .social-media li {
   margin: 0 10px;
   transition: all 0.3s ease-in-out;
@@ -107,7 +107,9 @@ img {
   align-items: center;
   transition: all 0.3s ease-in-out;
 }
-
+.social-media .social-linkedin {
+  padding: 6px;
+}
 /* -------- Pre Loader -------- */
 .animsition-loading-1 {
   position: absolute;
@@ -427,8 +429,6 @@ background: #161616;
   left: 50%;
   transform: translateX(-50%);
 }
-
-
 /* ============== HEADER ============== */
 .header {
   background-image: url("../images/header-bg.jpg");
@@ -457,10 +457,10 @@ background: #161616;
   border-bottom: 2px solid #fff;
   margin-bottom: 15px;
 }
-.social-media li {
+.header .social-media li {
   margin: 0px 5px;
 }
-.social-media li:last-child {
+.header .social-media li:last-child {
   margin-right: 0px;
 }
 .header .social-media a:hover{
@@ -488,7 +488,6 @@ background: #161616;
   line-height: 1.2;
   color: #fff;
 }
-
 /* -------- mobile menu button -------- */
 .navbar-toggler {
   background-color: azure;
@@ -563,9 +562,6 @@ background: #161616;
   left: 30px;
   width: 95%;
 }
-/* .header-texture-2 > div:first-of-type {
-  width: 40%;
-} */
 /* ============== Body Sections ============== */
 /* ======= WHO ARE WE ======= */
 .who-are-we {
@@ -1215,9 +1211,6 @@ footer{
   text-align: center;
   margin-bottom: 10px;
 }
-.footer-logo img{
-  max-width: 105px;
-}
 /* ----- Footer social media ----- */
 .footer .social-media{
   margin-bottom: 45px;
@@ -1294,13 +1287,8 @@ svg .cls-1{
   color: #fff;
 }
 #footer-logo-svg{
-  width: 105px;
+  width: 110px;
   color: #000;
-  transition: all 0.3s ease-in-out;
-}
-.footer-logo a:hover #footer-logo-svg{
-  color: #fff;
-  transition: all 0.3s ease-in-out;
 }
 #facebook,
 #instagram{
@@ -1310,8 +1298,8 @@ svg .cls-1{
   transition: all 0.3s ease-in-out;
 }
 #linkedin {
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }

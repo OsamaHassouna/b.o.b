@@ -94,6 +94,20 @@ img {
   background: #fff;
   max-width: 500px;
 }
+
+.social-media li {
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+ .social-media li a{
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
 /* -------- Pre Loader -------- */
 .animsition-loading-1 {
   position: absolute;
@@ -449,10 +463,14 @@ background: #161616;
 .social-media li:last-child {
   margin-right: 0px;
 }
-.social-facebook img,
-.social-linkedin img,
-.social-instagram img {
-  width: 22px;
+.header .social-media a:hover{
+  background: #fff;
+}
+.header .social-media a:hover #facebook,
+.header .social-media a:hover #instagram,
+.header .social-media a:hover #linkedin{
+  color: #000;
+  transition: all 0.3s ease-in-out;
 }
 .main-menu li {
   padding: 0px 30px;
@@ -1111,6 +1129,7 @@ footer{
   background-color: #161616;
   position: relative;
 }
+/* ----- footer PDF ----- */
 .bob-pdf{
   padding: 120px 0 110px;
   text-align: center;
@@ -1140,7 +1159,7 @@ footer{
   opacity: 0.1;
   top: -40px;
 }
-
+/* ----- footer NAV ----- */
 .footer-nav {
   margin-bottom: 75px;
 }
@@ -1164,6 +1183,7 @@ footer{
   font-size: 12px;
   color: #cbcbcb;
   line-height: 1;
+  padding: 5px 0;
 }
 .footer-newsletter input {
   font-size: 12px;
@@ -1198,26 +1218,25 @@ footer{
 .footer-logo img{
   max-width: 105px;
 }
-.footer-main .social-media{
+/* ----- Footer social media ----- */
+.footer .social-media{
   margin-bottom: 45px;
 }
-.footer-main .social-media ul{
+.footer .social-media ul{
   width: 10%;
   margin: 0 auto;
 }
-.footer-main .social-media li {
-  margin: 0 12px;
-  transition: all 0.5s ease-in-out;
+.footer .social-media a{
+  border-color: #000;
 }
-.footer-main .social-media li:hover img{
-  -webkit-filter: invert(0%);
-  filter: invert(0%);
-  transition: all 0.5s ease-in-out;
+.footer .social-media a:hover{
+  border-color: #fff;
+  background: #fff;
 }
-.footer-main .social-media img{
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-  transition: all 0.3s ease-in-out;
+.footer #facebook,
+.footer #linkedin,
+.footer #instagram{
+  color: #000;
 }
 .copy-writes{
   font-size: 10px;
@@ -1227,7 +1246,7 @@ footer{
   color: #aaa;
   text-align: center;
 }
-
+/* ----- Footer Texture ----- */
 .footer-texture-1{
   top: 60px;
   left: 20px;
@@ -1277,6 +1296,24 @@ svg .cls-1{
 #footer-logo-svg{
   width: 105px;
   color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.footer-logo a:hover #footer-logo-svg{
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#facebook,
+#instagram{
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#linkedin {
+  width: 14px;
+  height: 14px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 /* -------- Slider -------- */
 
@@ -1337,9 +1374,7 @@ svg .cls-1{
     max-width: 80%;
   }
   .why-texture.bg-texture{
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
+    display: none !important;
   }
   .why .why-desc{
     text-align: center;
@@ -1388,10 +1423,6 @@ svg .cls-1{
   .csr-img-texture2{
     display: block;
     max-width: 250px;
-  }
-  .bg-texture.csr-texture-1{
-    display: block;
-    top: 100px;
   }
   .csr-texture-1 .doted-y-big {
     background-position: center 0, center 150px, center 300px, center 450px, center 500px, center 650px;
@@ -1476,11 +1507,10 @@ svg .cls-1{
     display: none;
   }
   .footer-links ul{
-    display: block;
+    width: 100%;
   }
   .footer-links li{
-    max-width: 50%;
-    float: none;
+    width: 50%;
     margin: 0 auto;
     padding: 10px 0;
   }

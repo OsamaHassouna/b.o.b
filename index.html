@@ -25,9 +25,6 @@
     <link rel='stylesheet' type='text/css' href='vendor/animate/animate.min.css'>
     <!--=================== SLICK =====================-->
     <link rel='stylesheet' type='text/css' href='vendor/slick/slick.css'>
-    <!-- <link rel='stylesheet' type='text/css' href='vendor/slick/slick-theme.css'> -->
-    <!--=================== CSS Utility =====================-->
-    <!-- <link rel='stylesheet' type='text/css' href='vendor/css-utility/util.min.css'> -->
     <!--=================== CUSTOM STYLE =====================-->
     <link rel='stylesheet' type='text/css' href='css/main.css'>
 </head>
@@ -45,7 +42,7 @@
                                 <nav class='navbar navbar-expand-lg no-gutters'>
                                     <!-- Logo -->
                                     <div class="col-4">
-                                        <a href='index.html' class='logo navbar-brand'>
+                                        <a href='index.html' class='logo navbar-brand' draggable="false">
                                             <svg viewBox="0 0 559.07 243.53" id="logo-svg">
                                                 <use xlink:href="#logo"></use>
                                             </svg>
@@ -63,17 +60,23 @@
                                             <ul class='social-media d-flex justify-content-end'>
                                                 <li>
                                                     <a href='#' class='social-facebook'>
-                                                        <img src="images/social/facebook.svg" alt="facebook">
+                                                        <svg viewBox="0 0 264 512" id="facebook">
+                                                            <use xlink:href="#facebook-sm"></use>
+                                                        </svg>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href='#' class='social-linkedin'>
-                                                        <img src="images/social/linkedin.svg" alt="linkedin">
+                                                        <svg viewBox="0 0 448 512" id="linkedin">
+                                                            <use xlink:href="#linkedin-sm"></use>
+                                                        </svg>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href='#' class='social-instagram'>
-                                                        <img src="images/social/instagram.svg" alt="instagram">
+                                                        <svg viewBox="0 0 448 512" id="instagram">
+                                                            <use xlink:href="#instagram-sm"></use>
+                                                        </svg>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -426,7 +429,7 @@
                                     <div class="row no-gutters">
                                         <div class="col-12">
                                             <div class="footer-logo">
-                                                <a href="#">
+                                                <a href="#"  draggable="false">
                                                     <svg viewBox="0 0 83.69 25.73" id="footer-logo-svg">
                                                         <use xlink:href="#logo-noSub"></use>
                                                     </svg>
@@ -436,17 +439,23 @@
                                                 <ul class='d-flex justify-content-center'>
                                                     <li>
                                                         <a href='#' class='social-facebook'>
-                                                            <img src="images/social/facebook.svg" alt="facebook">
+                                                            <svg viewBox="0 0 264 512" id="facebook">
+                                                                <use xlink:href="#facebook-sm"></use>
+                                                            </svg>
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href='#' class='social-linkedin'>
-                                                            <img src="images/social/linkedin.svg" alt="linkedin">
+                                                            <svg viewBox="0 0 448 512" id="linkedin">
+                                                                <use xlink:href="#linkedin-sm"></use>
+                                                            </svg>
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href='#' class='social-instagram'>
-                                                            <img src="images/social/instagram.svg" alt="instagram">
+                                                            <svg viewBox="0 0 448 512" id="instagram">
+                                                                <use xlink:href="#instagram-sm"></use>
+                                                            </svg>
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -488,7 +497,7 @@
                 <rect class="cls-1" width="559.07" height="243.54" />
             </clipPath>
         </defs>
-        <title>Logo</title>
+        <title>svg</title>
         <g id="logo" data-name="logo">
             <g id="Layer_1-2" data-name="Layer 1">
                 <g class="cls-2">
@@ -550,7 +559,15 @@
             <path class="cls-1" d="M2.34,13.26V6.81Q2.34,0,8,0t5.62,6.81v6.36a12.37,12.37,0,0,1-.17,2.13,7.3,7.3,0,0,1-.58,1.85,5,5,0,0,1-1,1.49,4.45,4.45,0,0,1-1.6,1A6.46,6.46,0,0,1,8,20a6.55,6.55,0,0,1-2.21-.35,4.53,4.53,0,0,1-1.6-.94,4.82,4.82,0,0,1-1-1.45,7.19,7.19,0,0,1-.59-1.83,12,12,0,0,1-.18-2.12m7.35.88V5.84Q9.69,3,8,3a1.48,1.48,0,0,0-.89.26A1.5,1.5,0,0,0,6.53,4a4.54,4.54,0,0,0-.24.9,6.31,6.31,0,0,0-.07,1v8.3Q6.22,17,8,17t1.74-2.83" />
             <rect class="cls-1" y="24.61" width="15.92" height="1.12" />
         </g>
-
+        <g id="facebook-sm" data-name="facebook">
+            <path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+        </g>
+        <g id="instagram-sm" data-name="instagram">
+            <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+        </g>
+        <g id="linkedin-sm" data-name="linkedin">
+            <path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path>
+        </g>
     </svg>
     <!-- =================== JQUERY ===================== -->
     <script type='text/javascript' src='vendor/jQuery3.2.1/jquery-3.2.1.min.js'></script>

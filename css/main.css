@@ -421,6 +421,7 @@ input:-webkit-autofill:focus{
 .v-line,
 .h-line{
   position: relative;
+  transition: all 1.2s ease-in-out;
 }
 .v-line.black::after,
 .h-line.black::after{
@@ -438,7 +439,7 @@ background: #161616;
   top: 50%;
   transform: translateY(-50%);
   left: 140px;
-  transition: all 1s ease;
+  transition: all 1.5s ease-in-out;
 }
 .v-line::after{
   content: '';
@@ -448,7 +449,7 @@ background: #161616;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: all 1s ease;
+  transition: all 1.5s ease-in-out;
 }
 /* ============== HEADER ============== */
 .header {
@@ -626,6 +627,7 @@ background: #161616;
   left: 30px;
   width: 95%;
 }
+
 .header-texture-2 .h-line::after{
   width: 0;
 }

@@ -104,6 +104,39 @@ img {
   top: 30%;
   left: 30%;
 }
+/* ---- Box Lines ----*/
+.box-top,
+.box-bottom,
+.box-left,
+.box-right{
+  position: absolute;
+  background: #161616;
+  transition: all 0.5s ease-out;
+}
+.box-top {
+  width: 0px;
+  height: 2px;
+  left: 0;
+  top: 0;
+}
+.box-bottom {
+  width: 0px;
+  height: 2px;
+  right: 0;
+  bottom: 0;
+}
+.box-left {
+  height: 0px;
+  width: 2px;
+  bottom: 0;
+  left: 0;
+}
+.box-right {
+  height: 0px;
+  width: 2px;
+  top: 0;
+  right: 0;
+}
 /* ---- override Input Autofill ----*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -627,7 +660,6 @@ background: #161616;
   left: 30px;
   width: 95%;
 }
-
 .header-texture-2 .h-line::after{
   width: 0;
 }
@@ -658,23 +690,41 @@ background: #161616;
   margin: 0 auto;
   margin-bottom: 85px;
 }
-.who-are-we .sec-title .who-box {
+ .who-box {
   font-family: inherit;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.2;
   text-transform: uppercase;
   padding: 30px;
-  border: 2px solid #161616;
+  /* border: 2px solid #161616; */
   text-align: center;
   margin-bottom: 0px;
+  position: relative;
 }
-.who-are-we .sec-title .who-box > div {
+.who-box.animated .box-top{
+  width: 100%;
+  transition-delay: 0.2s;
+}
+.who-box.animated .box-right{
+  height: 100%;
+  transition-delay: 0.7s;
+}
+.who-box.animated .box-bottom{
+  width: 100%;
+  transition-delay: 1.2s;
+}
+.who-box.animated .box-left{
+  height: 100%;
+  transition-delay: 1.7s;
+}
+
+ .who-box .who,
+ .who-box .are,
+ .who-box .we {
   margin-bottom: 40px;
 }
-.who-are-we .sec-title .who-box > div:last-of-type {
-  margin-bottom: 0px;
-}
+
 .sym-1,
 .sym-2 {
   visibility: hidden;
@@ -732,6 +782,13 @@ background: #161616;
 .waw-texture-2{
   bottom: 0px;
   right: 60px;
+}
+.waw-texture-2 .v-line::after{
+  height: 0;
+}
+.waw-texture-2.animated .v-line::after{
+  height: 55%;
+  transition-delay: 0.2s;
 }
 
 /* ======= WHY ======= */
@@ -892,13 +949,18 @@ background: #161616;
   bottom: 13%;
   height: 10px;
   width: 24%;
+  transition: all 0.5s ease-in-out;
 }
 .why-texture-line.h-line::after{
-  width: 100%;
+  width: 0;
   height: 5px;
   left: 0;
+  transition: all 0.5s ease-in-out;
 }
-
+.why-texture-line.h-line.animated::after{
+  width: 100%;
+  transition-delay: 1s;
+}
 /* ======= CSR ======= */
 .csr{
   padding-top: 110px;
@@ -1200,33 +1262,91 @@ footer{
 }
 /* ----- footer PDF ----- */
 .bob-pdf{
-  padding: 120px 0 110px;
+  padding: 80px 0;
   text-align: center;
+}
+.bob-pdf-btn,
+.bob-pdf a{
   position: relative;
 }
 .bob-pdf a{
+  padding: 40px 5px;
+  transition: all 0.5s ease-in-out;
+}
+.bob-pdf a span{
   font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
 }
 .bob-pdf .left-line {
-  width: 4px;
+  width: 3px;
   height: 185px;
   background: #fff;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 30px;
   opacity: 0.1;
+  transition: all 0.5s ease-in-out;
 }
 .bob-pdf .top-line {
   width: 185px;
   height: 3px;
   background: #fff;
   position: absolute;
-  right: -30px;
+  right: 0;
   opacity: 0.1;
-  top: -40px;
+  top: 0px;
+  transition: all 0.5s ease-in-out;
+}
+.bob-pdf-btn:hover .left-line{
+  height: 0;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.bob-pdf-btn:hover .top-line{
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+/* ----- New Animation test PDF btn ----- */
+.pdf-line{
+  /* opacity: 0.1; */
+  background: #fff;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.pdf-line.top{
+  height: 3px;
+  width: 0;
+  top: 0;
+  right: 0;
+}
+.pdf-line.left{
+  width: 3px;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+.pdf-line.bottom{
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+}
+.pdf-line.right{
+  width: 3px;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.bob-pdf-btn:hover .pdf-line.top,
+.bob-pdf-btn:hover .pdf-line.bottom{
+  width: 100%;
+}
+.bob-pdf-btn:hover .pdf-line.left,
+.bob-pdf-btn:hover .pdf-line.right{
+  height: 100%;
 }
 /* ----- footer NAV ----- */
 .footer-nav {
@@ -1362,8 +1482,8 @@ svg .cls-1{
   color: #000;
 }
 #footer-pdf-svg{
-  width: 180px;
-  margin: 0 5%;
+  width: 150px;
+  margin: 0 4%;
   color: #fff;
 }
 #footer-logo-svg{
@@ -1514,12 +1634,12 @@ svg .cls-1{
     height: 330px;
   }
   /* ----- Footer ----- */
-  .bob-pdf .top-line{
+  /* .bob-pdf .top-line{
     right: 0;
-  }
-  .bob-pdf .left-line{
+  } */
+  /* .bob-pdf .left-line{
     left: 5%;
-  }
+  } */
   .footer-links{
     text-align: center;
     margin-bottom: 15px;
@@ -1544,9 +1664,9 @@ svg .cls-1{
     width: 140px;
   }
   /* ----- Footer ----- */
-  .bob-pdf .left-line{
+  /* .bob-pdf .left-line{
     left: 5px;
-  }
+  } */
 }
 
 @media (max-width: 575px) {
@@ -1596,8 +1716,20 @@ svg .cls-1{
     justify-content: center !important;
   }
   /* ----- Footer ----- */
-  .bob-pdf .left-line{
+  .bob-pdf a,
+  .bob-pdf a span{
+    display: block !important;
+  }
+  #footer-pdf-svg{
+    width: 180px;
+    margin: 20px 5%;
+  }
+  .bob-pdf .left-line,
+  .pdf-line{
     display: none;
+  }
+  .bob-pdf-btn:hover .top-line{
+    opacity: 0.1;
   }
   .footer-links ul{
     width: 100%;

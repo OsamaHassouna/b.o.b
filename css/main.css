@@ -89,10 +89,15 @@ img {
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 0;
   height: 1px;
   background: #fff;
   max-width: 500px;
+  transition: all 0.5s ease-in-out;
+}
+.seperator.animated::after{
+  width: 50%;
+  transition-delay: 0.5s;
 }
 .shadow-box{
   visibility: visible;
@@ -1109,8 +1114,13 @@ background: #161616;
 }
 .csr-img-line1::after{
   left: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
+  transition: all 0.5s ease-in-out;
+}
+.csr-img-line1.animated::after{
+  width: 100%;
+  transition-delay: 0.5s;
 }
 .csr-img-line2 {
   position: absolute;
@@ -1121,8 +1131,13 @@ background: #161616;
 }
 .csr-img-line2::after{
   left: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
+  transition: all 0.5s ease-in-out;
+}
+.csr-img-line2.animated::after{
+  width: 100%;
+  transition-delay: 0.8s;
 }
 .csr-img-texture1{
   top: 40px;
@@ -1238,7 +1253,9 @@ background: #161616;
   -webkit-transition: all 0.3s ease;
   margin: 0 auto;
   outline: none;
-
+}
+.partners-slider .items-slick{
+  outline: none;
 }
 .partners-slider .item-container:hover{
   border-radius: 0px;
@@ -1278,6 +1295,9 @@ footer{
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
+}
+.footer-pdf-svg{
+  margin: 0 4%;
 }
 .bob-pdf .left-line {
   width: 3px;
@@ -1468,7 +1488,7 @@ svg .cls-1{
   color: #fff;
 }
 #who-svg{
-  color: rgba(0,0,0,0.05);
+  color: rgba(0,0,0,0.01);
 }
 #why-title-svg{
   color: rgba(255,255,255,1);
@@ -1483,7 +1503,6 @@ svg .cls-1{
 }
 #footer-pdf-svg{
   width: 150px;
-  margin: 0 4%;
   color: #fff;
 }
 #footer-logo-svg{
@@ -1503,12 +1522,6 @@ svg .cls-1{
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-/* -------- Slider -------- */
-
-/* -------- Product -------- */
-
-/* ============== SELECT2 ============== */
-
 /* ============== Mobile Menu ============== */
 
 /* ============== MEDIA ============== */
@@ -1722,6 +1735,8 @@ svg .cls-1{
   }
   #footer-pdf-svg{
     width: 180px;
+  }
+  .footer-pdf-svg{
     margin: 20px 5%;
   }
   .bob-pdf .left-line,

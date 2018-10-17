@@ -100,13 +100,14 @@ img {
 }
 .shadow-box{
   visibility: visible;
-  width: 40%;
-  height: 40%;
+  width: 70%;
+  height: 180%;
   background: transparent;
   box-shadow: 0 0 40px #000;
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: -100%;
+  left: 20%;
+  z-index: 2;
 }
 /* ---- Box Lines ----*/
 .box-top,
@@ -608,6 +609,7 @@ background: #161616;
   position: relative;
   padding: 20px 0;
   display: inline-block;
+  z-index: 22;
 }
 .header-content .left-content h2 .title-small {
   font-family: inherit;
@@ -1548,9 +1550,18 @@ svg .cls-1{
     text-align: center;
     margin-bottom: 20px;
   }
+  .header-content .shadow-box{
+    display: none;
+  }
   .header-content .right-content p {
     margin: 0 auto;
     max-width: 90%;
+    transition: box-shadow 0.5s ease-in-out;
+  }
+  .header-content .right-content.animated p{
+    transition-delay: 1.7s;
+    box-shadow: 0 0 40px #000;
+    padding: 10px 20px;
   }
   /* ----- Why ----- */
   .why .why-img{

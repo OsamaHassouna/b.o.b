@@ -3,7 +3,6 @@
   font-family: Montserrat;
   src: url("../fonts/Montserrat-BlackItalic.ttf");
   font-weight: 900;
-  /* font-style: italic; */
 }
 @font-face {
   font-family: Montserrat;
@@ -509,9 +508,6 @@ background: #161616;
   width: 169px;
 }
 /* -------- NAV SECTION -------- */
-.navbar .nav-section {
-  padding-left: 70px;
-}
 .topbar {
   padding-bottom: 15px;
   border-bottom: 2px solid #fff;
@@ -533,8 +529,11 @@ background: #161616;
   transition: all 0.3s ease-in-out;
 }
 .main-menu li {
-  margin-right: 60px;
+  margin: 0 4%;
   transition: all 0.2s ease-in-out;
+}
+.main-menu li:first-child{
+  margin-left: 0px;
 }
 .main-menu li:last-child {
   margin-right: 0px;
@@ -723,13 +722,11 @@ background: #161616;
   height: 100%;
   transition-delay: 1.7s;
 }
-
  .who-box .who,
  .who-box .are,
  .who-box .we {
   margin-bottom: 40px;
 }
-
 .sym-1,
 .sym-2 {
   visibility: hidden;
@@ -795,7 +792,6 @@ background: #161616;
   height: 55%;
   transition-delay: 0.2s;
 }
-
 /* ======= WHY ======= */
 .why{
   background-color: #161616;
@@ -836,10 +832,6 @@ background: #161616;
   line-height: 1;
   color: #fff;
 }
-/* .why .title-left,
-.why .title-right{
-  float:left;
-} */
 .why .title-left h3{
   font-family: 'Montserrat';
   font-weight: 900;
@@ -866,9 +858,6 @@ background: #161616;
   text-transform: uppercase;
   color: #fff;
 }
-/* .why .title-right img{
-  max-width: 251px;
-} */
 /* ----- DESCRIPTION ----- */
 .why .why-desc{
   text-align: right;
@@ -1049,7 +1038,6 @@ background: #161616;
   /* max-width: 85%; */
   /* position: relative; */
 }
-
 .csr-desc p{
   font-family: 'Montserrat';
   font-weight: 300;
@@ -1416,7 +1404,6 @@ footer{
   box-shadow: 0 0 5px #666;
   transition: all 0.3s ease-in-out;
 }
-
 .footer-newsletter .button {
   padding: 10px 15px;
   font-size: 12px;
@@ -1522,20 +1509,8 @@ svg .cls-1{
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-/* ============== Mobile Menu ============== */
-
 /* ============== MEDIA ============== */
 /* -------- 1200 * 991 * 768 * 575  -------- */
-@media (max-width: 1200px) {
-  .navbar .nav-section {
-    padding-left: 0px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .main-menu li {
-    padding: 0px 22px;
-  }
-}
 @media (min-width: 992px){
   .navbar .nav-section{
     display: block !important;
@@ -1566,10 +1541,6 @@ svg .cls-1{
     padding: 20px;
     width: 100%;
   }
-  /* .main-menu li:nth-child(2n) a::after{
-    left: auto;
-    right: 0;
-  } */
   .header-content {
     padding: 50px 0;
   }
@@ -1646,13 +1617,6 @@ svg .cls-1{
   .csr-texture-1 .pos-y{
     height: 330px;
   }
-  /* ----- Footer ----- */
-  /* .bob-pdf .top-line{
-    right: 0;
-  } */
-  /* .bob-pdf .left-line{
-    left: 5%;
-  } */
   .footer-links{
     text-align: center;
     margin-bottom: 15px;
@@ -1676,10 +1640,6 @@ svg .cls-1{
   .csr-img-line2 {
     width: 140px;
   }
-  /* ----- Footer ----- */
-  /* .bob-pdf .left-line{
-    left: 5px;
-  } */
 }
 
 @media (max-width: 575px) {
